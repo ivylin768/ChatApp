@@ -2,7 +2,7 @@
 Chat App Created Records While Learning Android Studio
 
 
-The app in #1155131776_a1.zip# has the following features
+## The app in *1155131776_a1.zip* has the following features
 
 • Two activities (Main Activity and Chat Activity)
 
