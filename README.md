@@ -22,3 +22,29 @@ o Check if the user has input any text (i.e. check whether the input area is emp
 
 o If the user has input some text, add a new item containing the message to the 
 end of the ListView; and then clear the input area
+
+## The app in *1155131776_a2.zip* have the following features
+• Two activities (Main Activity and Chat Activity)
+
+• When the Main Activity is created, you should fetch a list of chatrooms from the
+server using the /get_chatrooms API, and then populate the ListView in the activity
+with the names of the chatrooms.
+
+• When the user clicks on one of the chatrooms, the Chat Activity will be shown, in
+which the following functions should be realized.
+
+• There should be a refresh button on the Action Bar.
+
+• The Chat Activity should fetch the first page of messages in the selected chatroom
+using the /get_messages API when the user enters the chat room, or when the user
+clicks on the refresh button, and the messages should be shown in the ListView.
+
+• When the user inputs some text and clicks the Send button, the app should clear the
+input area, and submit the message to the server using the /send_message API, and
+then add the message to the bottom of the ListView
+
+• When the user scrolls to the topmost message in the ListView, the app should
+automatically fetch the next page of the messages, unless the current page is the last page. (Pay attention to the “total_pages” field in the JSON returned by the /get_messages API).
+
+• Each message should display the name of the user who wrote the message, the message, as well as the message_time of the message (you can decide how to present the time).
+
