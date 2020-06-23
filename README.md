@@ -37,7 +37,9 @@ o If the user has input some text, add a new item containing the message to the 
 
 ## The server application developed in *1155131776_a3.zip* have the following features:
 • A server application written in Python using the Flask framework
+
 • The server application should implement the three APIs to support the instant messaging app
+
 o API 1: GET: /api/asgn3/get_chatrooms:
 Returns a list of chatrooms available (you should at least create one chatroom in your database).
 o API 2: GET: /api/asgn3/get_messages:
