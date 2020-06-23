@@ -2,7 +2,7 @@
 Chat App Created Records While Learning Android Studio
 
 
-## The app in *1155131776_a1.zip* has the following features
+## The app in *1155131776_a1.zip* has the following features:
 
 • Two activities (Main Activity and Chat Activity)
 
@@ -15,10 +15,12 @@ Chat App Created Records While Learning Android Studio
 • Each item in the ListView should contain two elements, one is the message itself, another is the time (HH:MM) when the message is sent
 
 • When the user clicks on the send button, the app should perform the following actions:
+
 o Check if the user has input any text (i.e. check whether the input area is empty)
+
 o If the user has input some text, add a new item containing the message to the end of the ListView; and then clear the input area
 
-## The app in *1155131776_a2.zip* have the following features
+## The app in *1155131776_a2.zip* have the following features:
 • Two activities (Main Activity and Chat Activity)
 
 • When the Main Activity is created, you should fetch a list of chatrooms from the server using the /get_chatrooms API, and then populate the ListView in the activity with the names of the chatrooms.
@@ -42,7 +44,21 @@ o If the user has input some text, add a new item containing the message to the 
 
 o API 1: GET: /api/asgn3/get_chatrooms:
 Returns a list of chatrooms available (you should at least create one chatroom in your database).
+
 o API 2: GET: /api/asgn3/get_messages:
 Returns the list of messages in a particular chatroom, sorted in reverse chronological order (the latest message comes first), and implements the paging mechanism as shown in the example.
+
 o API 3: POST: /api/asgn3/send_message:
 Allows the app to submit a new message to a chatroom, which should be inserted into the database.
+
+## The app in *1155131776_a4.zip* have implemented the following features:
+
+• Extend your Android app and allows it to receive WebSocket messages (when the chatroom page is opened).
+
+• Upon receiving a WebSocket message, the Android app should create a notification to notify the user of the new message received.
+
+• Implement a WebSocket server to handle WebSocket requests (connect, disconnect, join, leave) from clients.
+
+• Create a new API “/api/a4/broadcast_room” to allow server application to submit a WebSocket message to be broadcasted to a specific room.
+
+• Extends the server application’s “/api/a3/send_message” API to submit a message
