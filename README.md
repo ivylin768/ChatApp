@@ -20,7 +20,7 @@ o Check if the user has input any text (i.e. check whether the input area is emp
 
 o If the user has input some text, add a new item containing the message to the end of the ListView; and then clear the input area
 
-## The app in *1155131776_a2.zip* have the following features:
+## The app in *1155131776_a2.zip* has the following features:
 • Two activities (Main Activity and Chat Activity)
 
 • When the Main Activity is created, you should fetch a list of chatrooms from the server using the /get_chatrooms API, and then populate the ListView in the activity with the names of the chatrooms.
@@ -37,7 +37,7 @@ o If the user has input some text, add a new item containing the message to the 
 
 • Each message should display the name of the user who wrote the message, the message, as well as the message_time of the message (you can decide how to present the time).
 
-## The server application developed in *1155131776_a3.zip* have the following features:
+## The server application developed in *1155131776_a3.zip* has the following features:
 • A server application written in Python using the Flask framework
 
 • The server application should implement the three APIs to support the instant messaging app
@@ -51,7 +51,7 @@ Returns the list of messages in a particular chatroom, sorted in reverse chronol
 o API 3: POST: /api/asgn3/send_message:
 Allows the app to submit a new message to a chatroom, which should be inserted into the database.
 
-## The app in *1155131776_a4.zip* have implemented the following features:
+## The app in *1155131776_a4.zip* has implemented the following features:
 
 • Extend your Android app and allows it to receive WebSocket messages (when the chatroom page is opened).
 
@@ -62,3 +62,15 @@ Allows the app to submit a new message to a chatroom, which should be inserted i
 • Create a new API “/api/a4/broadcast_room” to allow server application to submit a WebSocket message to be broadcasted to a specific room.
 
 • Extends the server application’s “/api/a3/send_message” API to submit a message
+
+## The app in *ChatAppPlus.zip* has the following features:
+
+• Login & Signup: Click the button in the upper right corner of the homepage and go to the Account Page, you can login your account or create a new account.
+
+• Chatrooms: Click the chatroom list item, you can chat with all users in the specific chatroom online. Click the icon in the right bottom, you can chat with the chatbot Feifei or even make some queries.
+
+• Game Rooms: Currently provide two games, respectively DRAW SOMETHING and TIC TAC TOE. Click on the corresponding icon to play with online users.
+
+• Video Rooms: Currently provide two kinds of video enjoyment, respectively VIDEO PLAYER and TV PROGRAMS. Click on the corresponding icon to enjoy.
+
+• 【For the server application】Deployed on Amazon Web Services(AWS), support functions such as Login & Signup, Chatrooms and Game Rooms, sometimes invalid in Mainland China.
